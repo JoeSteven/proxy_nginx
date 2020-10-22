@@ -1,3 +1,5 @@
+# mac get ip :ps -ef | grep -i docker | grep -i  "\-\-host\-ip" |awk -F "host-ip" '{print $2}' | awk -F '--lowest-ip' '{print $1}'
+# linux : ifconfig | grep docker -A 8
 HOST_MACHINE_IP=xxx.xxx.xxx.xxx
 origin_config_folder="./conf.origin"
 build_config_folder="./conf.d"
@@ -6,6 +8,7 @@ NGINX_REPELACE_PATH="/etc/nginx/conf.d"
 NGINX_IMAGE_VERSION="nginx:alpine"
 DOCKER_CONTAINER_NAME="proxyserver"
 
+echo "容器可访问的宿主IP为:$HOST_MACHINE_IP"
 echo "Start Proxyserver..."
 echo "Host ip is $HOST_MACHINE_IP"
 
