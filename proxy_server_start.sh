@@ -3,7 +3,7 @@ origin_config_folder="./conf.origin"
 build_config_folder="./conf.d"
 ABSOLUTE_CONFIG_PATH="your_real_path/proxy_nginx/conf.d"
 NGINX_REPELACE_PATH="/etc/nginx/conf.d"
-NGINX_IMAGE_VERSION="nginx:alpline"
+NGINX_IMAGE_VERSION="nginx:alpine"
 DOCKER_CONTAINER_NAME="proxyserver"
 
 echo "Start Proxyserver..."
