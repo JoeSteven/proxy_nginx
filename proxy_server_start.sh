@@ -31,6 +31,7 @@ do
 done
 echo "Build config success!"
 
+#检查是否已经有相同容器，有就重启容器，否则启动新容器
 result=`docker container ls -a`
 if [[ $result =~ "$DOCKER_CONTAINER_NAME" ]]
 then
